@@ -29,9 +29,6 @@ pipeline {
         }
 
         stage('Deploy') {
-            when {
-                branch 'main'
-            }
             steps {
                 script {
                     // Deploy the changes (optional stage)
