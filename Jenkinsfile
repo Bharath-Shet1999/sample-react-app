@@ -18,20 +18,6 @@ pipeline {
             }
         }
 
-        // stage('Validate PR') {
-        //     steps {
-        //         script {
-        //             // Ensure we are dealing with a PR to main
-        //             def prTargetBranch = env.CHANGE_TARGET
-        //             if (prTargetBranch != GIT_BRANCH) {
-        //                 error "This PR is not targeting the 'main' branch!"
-        //             } else {
-        //                 echo "This PR is targeting the 'main' branch"
-        //             }
-        //         }
-        //     }
-        // }
-
         stage('Build & Test') {
             steps {
                 script {
