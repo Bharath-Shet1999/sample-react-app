@@ -17,4 +17,4 @@ jobs:
     - name: Run tests
       run: |
         cd src
-        node main.js
+        node index.js
